@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/425d92c0de.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+   <div class="sidebar">
+       <div class="logo-main">
+            <i class="fab fa-500px fa-4x logo"></i>
+       </div>             
+        <div>
+            <span><i class="far fa-user fa-2x icon2 "></i> <br>Students</span> 
+            <span><i class="far fa-address-book fa-2x icon2"></i><br>Lessons Plan</span> 
+            <span><i class="fas fa-cog fa-2x icon2"></i><br>Settings</span>
+        </div>   
+   </div>
+
+   <div class="container">
+       <div class="header">
+       </div>
+       <div class="main">
+           <div class="primary-text">
+            <i class="fas fa-play icon"></i>
+            videos
+           </div>
+           <div class="secondary">
+            <input class="input" type="text" placeholder="Insert Url here">
+            <p class="optional">or</p>
+            <div class="box">
+                upload
+            </div>
+           </div>
+           
+       </div>
+   </div>
+
+       
+
+</body>
+<style>
+    /*========================== Basic Setup =========================*/
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    html {
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+    }
+    /* ======================side navBar===========================*/
+    .sidebar {
+        width: 7rem;
+        float: left;
+        height: 100vh;
+        background-color:white;
+        box-shadow: 8px 1px 20px rgba(0,0,0,0.3);
+    }
+    .logo{
+       margin: 10px;
+    }
+    .logo-main{
+        display: flex;
+        justify-content: center;
+        border-bottom: 2px solid rgba(221, 219, 219, 0.507);
+    }
+    span{
+         display: block;
+         text-align:center;
+         margin-bottom: 10px;
+         padding: 10px;
+         cursor: pointer;
+         border-left: 5px solid white;
+         transition: background-color 1s;
+    }
+    span:hover{
+        background-color:#70a2ff93;
+        border-left: 5px solid #5352ed;
+    }
+    .icon2{
+        margin-top: 10px;
+        margin-left: 2px;
+        color: #a4a4bd;
+    }
+   
+
+    /* ========================Body Container =====================*/
+    .container{
+        display:block;
+        float: left;
+        width: 80%;
+
+    }
+    .header{
+        height:12vh;
+
+    }
+
+    /* ========================= Main Body =======================*/
+    .main{
+        float: left;
+        width: 91vw;
+        height: 85vh;
+        background-color:rgba(221, 219, 219, 0.507);
+    }  
+    .primary-text{
+        margin: 30px;
+        color: #a4a4bd;
+    }
+    .icon {
+        padding: 5px;
+    }
+    .secondary{
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    .input,
+    .input:visited {
+        width: 100%;
+        padding: 10px;
+        border: 0;
+        border-radius: 10px;
+    }
+    .input::-webkit-input-placeholder {
+        color: rgba(31, 30, 30, 0.726);
+        font-weight: 700;
+            
+    }
+    .optional {
+            text-align: center;
+            margin-top: 20px;
+    }
+    .box{
+        cursor: pointer;
+        padding: 60px 40px;
+        width: fit-content;
+        background-color: rgba(255, 255, 255, 0.849);
+    }
+     
+</style>
+
+</html>
